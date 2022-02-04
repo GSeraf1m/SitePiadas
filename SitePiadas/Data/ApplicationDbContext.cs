@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SitePiadas.Models;
 
 namespace SitePiadas.Data
 {
@@ -9,5 +10,6 @@ namespace SitePiadas.Data
             : base(options)
         {
         }
+        public DbSet<SitePiadas.Models.Piada> Piada { get; set; }
     }
 }
